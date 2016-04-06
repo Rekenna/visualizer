@@ -1,4 +1,4 @@
-# Pebble - v 1.0.1 #
+# Base - v 1.0.1 #
 
 Pebble is a customized version of the [Yeoman Generator gulp-webapp](https://github.com/yeoman/generator-gulp-webapp). I created this repo as a starting point for static landing pages. Utilizing the Gulp Streaming Build system we can create well-crafted, modern landing pages quickly.
 
