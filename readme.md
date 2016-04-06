@@ -22,6 +22,12 @@ Navigate to your directory in your terminal and install dependancies.
 
 `npm install && bower install`
 
+**Development Mode**
+
+`gulp serve` to start watching and serve app on localhost
+
+`gulp build` to compile and build into /dist/
+
 
 ### Having issues? ###
 
