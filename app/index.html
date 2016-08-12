@@ -11,6 +11,8 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -27,49 +29,151 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div class="header">
-        <h4 class="pull-right">Bootstrap Branch</h4>
-        <h3 class="text-muted">Pebble</h3>
-      </div>
 
+		<section id="splash">
+			<h1 class="animated fadeInUp display-1">Hello!</h1>
+		</section>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          <a href="https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/TOC.md" class="btn btn-primary" target="_blank">View Repo</a>
+		<header class="masthead">
+			<div class="container">
+				<div class="row">
+					<div class="brand col-md-4">
+						<img src="images/ftmlogo.png" alt="Fast Track Marketing Logo" />
+					</div>
+					<nav class="col-md-8">
+						<ul>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-          <a href="http://sass-lang.com/guide" class="btn btn-primary" target="_blank">Learn Sass</a>
+			</div>
+		</header>
 
-        </div>
-        <div class="col-lg-6">
-            <h4>Bootstrap</h4>
-            <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-            <a href="http://getbootstrap.com/" target="_blank" class="btn btn-primary">View Documentation</a>
+		<section class="intro waypoint">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<article class="">
+							<h3>This is Pebble</h3>
+							<p>
+								<i>Pebble</i> serves as a starting point for static landing pages. Pebble is a customized version of the
+								Yeoman Generator gulp-webapp. I created this repo as a starting point for static landing pages.
+								Utilizing the Gulp Streaming Build system we can create well-crafted, modern landing pages quickly.
+							</p>
+							<h5>System Requirements</h5>
+							<ol>
+								<li><a target="_blank" href="https://nodejs.org/en/">NodeJS</a></li>
+								<li><a target="_blank" href="https://bower.io/">Bower</a></li>
+								<li><a target="_blank" href="http://gulpjs.com/">Gulp</a></li>
+							</ol>
+							<hr>
+							<h5>Getting Started</h5>
+							<p>
+								Once NodeJS is installed on your system, clone this repository in the directory you see fit.
+							</p>
+							<h6>Install Gulp-cli &amp; Bower Globally</h6>
+							<p>
+								<code>npm install gulp bower -g</code>
+							</p>
+							<p>
+								Navigate to your directory in your terminal and install dependancies.
+							</p>
+							<p>
+								<code>cd yourdirectory/</code> then <code>npm install &amp;&amp; bower install</code>
+							</p>
+							<h6>Development Mode</h6>
+							<ul>
+								<li><code>gulp serve</code> to start watching and serve app on localhost.</li>
+								<li><code>gulp build</code>to compile and build into /dist/.</li>
+							</ul>
+						</article>
+					</div>
+					<div class="col-md-6">
+						<div class="card animated fadeInRight">
+						  <img class="card-img-top" src="https://unsplash.it/600/300/?random" alt="Card image cap">
+						  <div class="card-block">
+						    <h4 class="card-title">We're Using Bootstrap 4</h4>
+						    <p class="card-text">Currently, Bootstrap 4 Alpha 3 is installed. That means <i>new features</i>, <i>syntax changes</i> &amp; <i>lot's of fun!</i></p>
+								<p>
+									These other libraries/plugins are included for your convenience.
+								</p>
+						  </div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Animate.css</li>
+								<li class="list-group-item">Waypoints.js</li>
+								<li class="list-group-item">Font Awesome</li>
+							</ul>
+							<div class="card-block text-xs-center">
+								<a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank" class="btn btn-primary">View the Documentation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <h4>Modernizr</h4>
-            <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-            <a href="https://modernizr.com/docs" class="btn btn-primary" target="_blank">View Documentation</a>
-        </div>
-      </div>
+		<section class="contact waypoint">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<article class="">
+							<h3>Analytics Tracking Improved!</h3>
+							<p>
+								With the most recent update to <i>Pebble</i>, I've changed how to track Google Analytics Events using just HTML markup. In the new <b>CoffeeScript</b> files, you can see that the JS for Pebble has moved into an Event Delegated
+								application system.
+							</p>
+							<p>
+								Simply add the class <code>.send-ga-event</code> to any element or form. The document listens for a click or submit event on any element with that class. Once fired, it sends an event directly to Google Analytics.
+							</p>
+							<p>
+								To customize this further, you will have to read through Google's <i>Analytics.js</i> Documentation.
+							</p>
+							<a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" class="btn btn-info" target="_blank">Learn About Analytics.js</a>
+						</article>
+					</div>
+					<div class="col-md-6">
+						<h4 class="send-ga-event">Having Issues?</h4>
+						<p>
+							Shoot me an email via this non-working form.
+						</p>
+						<form class="contact-form send-ga-event" method="post">
+							<div class="row">
+								<div class="form-group col-sm-6">
+									<label for="FirstName">First Name</label>
+	    						<input type="text" class="form-control" id="FirstName" placeholder="John">
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="LastName">Last Name</label>
+	    						<input type="text" class="form-control" id="LastName" placeholder="Doe">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="UserEmail">Email</label>
+								<input type="email" class="form-control" id="UserEmail" placeholder="Your Email">
+							</div>
+							<div class="form-group">
+								<label for="UserMessage">Message</label>
+								<textarea class="form-control" id="UserMessage" rows="5"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <div class="row">
-          <div class="col-lg-12">
-              <h3 class="text-center">This Repo Utilizes the Gulp Streaming Build System</h3>
-              <p class="text-center">
-                  Learn more about Gulp
-                  <a href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md" target="_blank">here</a>.
-              </p>
-          </div>
-      </div>
+		<footer class="text-xs-center">
+			<p>
+				Made with <i class="fa fa-heart"></i> by Ryan McKenna
+			</p>
+		</footer>
 
-      <div class="footer">
-        <p class="text-center">Made with ♥ by Ryan M.</p>
-      </div>
-    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -84,22 +188,13 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/app.js -->

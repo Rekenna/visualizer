@@ -2,20 +2,15 @@
   "name": "base-landing-page",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "jquery": "^3.1.0",
+    "bootstrap": "v4.0.0-alpha.3",
+    "waypoints": "^4.0.0",
+    "animate.css": "^3.5.2",
+    "components-font-awesome": "^4.6.3"
   },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
-      ]
-    }
-  },
+  "overrides": {},
   "devDependencies": {
-    "chai": "^3.5.0",
     "mocha": "^2.4.5"
   }
 }

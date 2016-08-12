@@ -6,7 +6,7 @@ window.App ||= {}
 
 App.init = (e) ->
 
-	App.Events.sendEvent()
+	console.log 'Pebble Initialized'
 
 	return
 

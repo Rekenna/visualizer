@@ -2,7 +2,8 @@
 $icon-font-path: "../fonts/";
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browserupgrade {
@@ -13,56 +14,79 @@ $icon-font-path: "../fonts/";
   padding: 1em 0;
 }
 
+// Variables
+$sunset: rgba(239, 100, 97, 1);
+$honey: rgba(228, 179, 99, 1);
+$white: #F5F7F4;
+$lilac: rgba(224, 223, 213, 1);
+$space: rgba(49, 54, 56, 1);
+$blue: #21B7FF;
+
 // Add custom Styles
-
-.header,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+body{
+	font-size: 17px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+section#splash{
+	background-color: $blue;
+	padding: 250px 50px;
+	text-align: center;
+	color: white;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  margin-top: 20px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+article, p, section{
+	letter-spacing: .3px;
 }
 
-a + h4 {
-  margin-top: 28px;
+img{
+	max-width: 100%;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+a{
+	color: $blue;
+	&:hover{
+		text-decoration: none;
+	}
+}
 
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+section.waypoint{
+	margin: 100px auto;
+}
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+.masthead{
+	background-color: $white;
+	padding: 25px 15px;
+	box-sizing: border-box;
+	.brand{
+		max-width: 400px;
+		display: inline-block;
+	}
+	img{
+		max-height: 40px;
+		width: auto;
+	}
+	&.reduced{
+		padding: 15px 15px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	}
+	nav{
+		ul, li{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			display: block;
+			text-align: right;
+		}
+		li{
+			display: inline-block;
+			a{
+				height: 40px;
+				line-height: 40px;
+				padding: 0 20px;
+				display: block;
+			}
+		}
+	}
 }
