@@ -11,8 +11,8 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
-    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css"/>
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css"/>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -31,27 +31,34 @@
       <h1 class="animated fadeInUp display-1">Hello!</h1>
     </section>
 
-    <header class="masthead">
+    <nav class="navbar navbar-light navbar-full bg-faded">
       <div class="container">
-        <div class="row">
-          <div class="brand col-md-4">
-            <img src="images/ftmlogo.png" alt="Fast Track Marketing Logo"/>
-          </div>
-          <nav class="col-md-8">
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNav" aria-controls="collapsingNav" aria-expanded="false" aria-label="Toggle navigation">
+	        &#9776;
+	      </button>
+	      <div class="collapse navbar-toggleable-xs" id="collapsingNav">
+	        <a class="navbar-brand" href="#">Pebble</a>
+	        <ul class="nav navbar-nav pull-right">
+	          <li class="nav-item active">
+	            <a class="nav-link" href="#">Home
+	              <span class="sr-only">(current)</span>
+	            </a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">Features</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">Pricing</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">About</a>
+	          </li>
+	        </ul>
+	      </div>
       </div>
-    </header>
+    </nav>
 
-    <section class="intro waypoint">
+    <section class="intro spaced">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -130,7 +137,7 @@
       </div>
     </section>
 
-    <section class="contact waypoint">
+    <section class="contact spaced">
       <div class="container">
         <div class="row">
           <div class="col-md-6">

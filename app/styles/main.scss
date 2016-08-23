@@ -22,6 +22,8 @@ $lilac: rgba(224, 223, 213, 1);
 $space: rgba(49, 54, 56, 1);
 $blue: #21B7FF;
 
+// Mixins
+
 // Add custom Styles
 body{
 	font-size: 17px;
@@ -29,7 +31,7 @@ body{
 
 section#splash{
 	background-color: $blue;
-	padding: 250px 50px;
+	padding: 150px 50px;
 	text-align: center;
 	color: white;
 }
@@ -49,44 +51,6 @@ a{
 	}
 }
 
-section.waypoint{
-	margin: 100px auto;
-}
-
-.masthead{
-	background-color: $white;
-	padding: 25px 15px;
-	box-sizing: border-box;
-	.brand{
-		max-width: 400px;
-		display: inline-block;
-	}
-	img{
-		max-height: 40px;
-		width: auto;
-	}
-	&.reduced{
-		padding: 15px 15px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	}
-	nav{
-		ul, li{
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-		ul{
-			display: block;
-			text-align: right;
-		}
-		li{
-			display: inline-block;
-			a{
-				height: 40px;
-				line-height: 40px;
-				padding: 0 20px;
-				display: block;
-			}
-		}
-	}
+section.spaced{
+	margin: 50px auto;
 }
