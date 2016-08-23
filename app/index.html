@@ -25,164 +25,190 @@
     <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 10]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <!--[if lt IE 10]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
 
+    <section id="splash">
+      <h1 class="animated fadeInUp display-1">Hello!</h1>
+    </section>
 
-		<section id="splash">
-			<h1 class="animated fadeInUp display-1">Hello!</h1>
-		</section>
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="brand col-md-4">
+            <img src="images/ftmlogo.png" alt="Fast Track Marketing Logo"/>
+          </div>
+          <nav class="col-md-8">
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-		<header class="masthead">
-			<div class="container">
-				<div class="row">
-					<div class="brand col-md-4">
-						<img src="images/ftmlogo.png" alt="Fast Track Marketing Logo" />
-					</div>
-					<nav class="col-md-8">
-						<ul>
-							<li>
-								<a href="#">About</a>
-							</li>
-							<li>
-								<a href="#">Contact</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+    <section class="intro waypoint">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <article>
+              <h3>This is Pebble</h3>
+              <p>
+                <i>Pebble</i>
+                serves as a starting point for static landing pages. Pebble is a customized version of the Yeoman Generator gulp-webapp. I created this repo as a starting point for static landing pages. Utilizing the Gulp Streaming Build system we can create
+                well-crafted, modern landing pages quickly.
+              </p>
+              <h5>System Requirements</h5>
+              <ol>
+                <li>
+                  <a target="_blank" href="https://nodejs.org/en/">NodeJS</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://bower.io/">Bower</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://gulpjs.com/">Gulp</a>
+                </li>
+              </ol>
+              <hr>
+              <h5>Getting Started</h5>
+              <p>
+                Once NodeJS is installed on your system, clone this repository in the directory you see fit.
+              </p>
+              <h6>Install Gulp-cli &amp; Bower Globally</h6>
+              <p>
+                <code>npm install gulp bower -g</code>
+              </p>
+              <p>
+                Navigate to your directory in your terminal and install dependancies.
+              </p>
+              <p>
+                <code>cd yourdirectory/</code>
+                then
+                <code>npm install &amp;&amp; bower install</code>
+              </p>
+              <h6>Development Mode</h6>
+              <ul>
+                <li>
+                  <code>gulp serve</code>
+                  to start watching and serve app on localhost.</li>
+                <li>
+                  <code>gulp build</code>to compile and build into /dist/.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <div class="card animated fadeInRight">
+              <img class="card-img-top" src="https://unsplash.it/600/300/?random" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">We're Using Bootstrap 4</h4>
+                <p class="card-text">Currently, Bootstrap 4 Alpha 3 is installed. That means
+                  <i>new features</i>,
+                  <i>syntax changes</i>
+                  &amp;
+                  <i>lot's of fun!</i>
+                </p>
+                <p>
+                  These other libraries/plugins are included for your convenience.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Animate.css</li>
+                <li class="list-group-item">Waypoints.js</li>
+                <li class="list-group-item">Font Awesome</li>
+              </ul>
+              <div class="card-block text-xs-center">
+                <a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank" class="btn btn-primary">View the Documentation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			</div>
-		</header>
+    <section class="contact waypoint">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <article class="">
+              <h3>Analytics Tracking Improved!</h3>
+              <p>
+                With the most recent update to
+                <i>Pebble</i>, I've changed how to track Google Analytics Events using just HTML markup. In the new
+                <b>CoffeeScript</b>
+                files, you can see that the JS for Pebble has moved into an Event Delegated application system.
+              </p>
+              <p>
+                Simply add the class
+                <code>.send-ga-event</code>
+                to any element or form. The document listens for a click or submit event on any element with that class. Once fired, it sends an event directly to Google Analytics.
+              </p>
+              <p>
+                To customize this further, you will have to read through Google's
+                <i>Analytics.js</i>
+                Documentation.
+              </p>
+              <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" class="btn btn-info" target="_blank">Learn About Analytics.js</a>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <h4 class="send-ga-event">Having Issues?</h4>
+            <p>
+              Shoot me an email via this non-working form.
+            </p>
+            <form class="contact-form send-ga-event" method="post">
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="FirstName">First Name</label>
+                  <input type="text" class="form-control" id="FirstName" placeholder="John">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="LastName">Last Name</label>
+                  <input type="text" class="form-control" id="LastName" placeholder="Doe">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="UserEmail">Email</label>
+                <input type="email" class="form-control" id="UserEmail" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <label for="UserMessage">Message</label>
+                <textarea class="form-control" id="UserMessage" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section class="intro waypoint">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<article class="">
-							<h3>This is Pebble</h3>
-							<p>
-								<i>Pebble</i> serves as a starting point for static landing pages. Pebble is a customized version of the
-								Yeoman Generator gulp-webapp. I created this repo as a starting point for static landing pages.
-								Utilizing the Gulp Streaming Build system we can create well-crafted, modern landing pages quickly.
-							</p>
-							<h5>System Requirements</h5>
-							<ol>
-								<li><a target="_blank" href="https://nodejs.org/en/">NodeJS</a></li>
-								<li><a target="_blank" href="https://bower.io/">Bower</a></li>
-								<li><a target="_blank" href="http://gulpjs.com/">Gulp</a></li>
-							</ol>
-							<hr>
-							<h5>Getting Started</h5>
-							<p>
-								Once NodeJS is installed on your system, clone this repository in the directory you see fit.
-							</p>
-							<h6>Install Gulp-cli &amp; Bower Globally</h6>
-							<p>
-								<code>npm install gulp bower -g</code>
-							</p>
-							<p>
-								Navigate to your directory in your terminal and install dependancies.
-							</p>
-							<p>
-								<code>cd yourdirectory/</code> then <code>npm install &amp;&amp; bower install</code>
-							</p>
-							<h6>Development Mode</h6>
-							<ul>
-								<li><code>gulp serve</code> to start watching and serve app on localhost.</li>
-								<li><code>gulp build</code>to compile and build into /dist/.</li>
-							</ul>
-						</article>
-					</div>
-					<div class="col-md-6">
-						<div class="card animated fadeInRight">
-						  <img class="card-img-top" src="https://unsplash.it/600/300/?random" alt="Card image cap">
-						  <div class="card-block">
-						    <h4 class="card-title">We're Using Bootstrap 4</h4>
-						    <p class="card-text">Currently, Bootstrap 4 Alpha 3 is installed. That means <i>new features</i>, <i>syntax changes</i> &amp; <i>lot's of fun!</i></p>
-								<p>
-									These other libraries/plugins are included for your convenience.
-								</p>
-						  </div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Animate.css</li>
-								<li class="list-group-item">Waypoints.js</li>
-								<li class="list-group-item">Font Awesome</li>
-							</ul>
-							<div class="card-block text-xs-center">
-								<a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank" class="btn btn-primary">View the Documentation</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="contact waypoint">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<article class="">
-							<h3>Analytics Tracking Improved!</h3>
-							<p>
-								With the most recent update to <i>Pebble</i>, I've changed how to track Google Analytics Events using just HTML markup. In the new <b>CoffeeScript</b> files, you can see that the JS for Pebble has moved into an Event Delegated
-								application system.
-							</p>
-							<p>
-								Simply add the class <code>.send-ga-event</code> to any element or form. The document listens for a click or submit event on any element with that class. Once fired, it sends an event directly to Google Analytics.
-							</p>
-							<p>
-								To customize this further, you will have to read through Google's <i>Analytics.js</i> Documentation.
-							</p>
-							<a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" class="btn btn-info" target="_blank">Learn About Analytics.js</a>
-						</article>
-					</div>
-					<div class="col-md-6">
-						<h4 class="send-ga-event">Having Issues?</h4>
-						<p>
-							Shoot me an email via this non-working form.
-						</p>
-						<form class="contact-form send-ga-event" method="post">
-							<div class="row">
-								<div class="form-group col-sm-6">
-									<label for="FirstName">First Name</label>
-	    						<input type="text" class="form-control" id="FirstName" placeholder="John">
-								</div>
-								<div class="form-group col-sm-6">
-									<label for="LastName">Last Name</label>
-	    						<input type="text" class="form-control" id="LastName" placeholder="Doe">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="UserEmail">Email</label>
-								<input type="email" class="form-control" id="UserEmail" placeholder="Your Email">
-							</div>
-							<div class="form-group">
-								<label for="UserMessage">Message</label>
-								<textarea class="form-control" id="UserMessage" rows="5"></textarea>
-							</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="text-xs-center">
-			<p>
-				Made with <i class="fa fa-heart"></i> by Ryan McKenna
-			</p>
-		</footer>
-
+    <footer class="text-xs-center">
+      <p>
+        Made with
+        <i class="fa fa-heart"></i>
+        by Ryan McKenna
+      </p>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] = function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+        b[l].l =+ new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
     </script>
 
     <!-- build:js scripts/vendor.js -->
@@ -192,9 +218,6 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/plugins.js -->
     <!-- endbuild -->
 
     <!-- build:js scripts/app.js -->
