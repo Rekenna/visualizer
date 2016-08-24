@@ -89,6 +89,7 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
 
   gulp.watch([
     'app/*.html',
+		'app/*.js',
     '.tmp/scripts/**/*.coffee',
     'app/images/**/*',
     '.tmp/fonts/**/*'

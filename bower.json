@@ -7,7 +7,9 @@
     "bootstrap": "v4.0.0-alpha.3",
     "waypoints": "^4.0.0",
     "animate.css": "^3.5.2",
-    "components-font-awesome": "^4.6.3"
+    "components-font-awesome": "^4.6.3",
+    "d3": "^4.2.2",
+    "paper": "^0.10.2"
   },
   "overrides": {},
   "devDependencies": {

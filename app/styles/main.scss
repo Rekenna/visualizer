@@ -29,28 +29,11 @@ body{
 	font-size: 17px;
 }
 
-section#splash{
-	background-color: $blue;
-	padding: 150px 50px;
-	text-align: center;
-	color: white;
-}
-
-article, p, section{
-	letter-spacing: .3px;
-}
-
-img{
-	max-width: 100%;
-}
-
-a{
-	color: $blue;
-	&:hover{
-		text-decoration: none;
-	}
-}
-
-section.spaced{
-	margin: 50px auto;
+canvas#visualizer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(82,208,240,1);
 }

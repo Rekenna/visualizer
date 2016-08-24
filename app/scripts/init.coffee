@@ -6,11 +6,13 @@ window.App ||= {}
 
 App.init = (e) ->
 
-	console.log 'Pebble Initialized'
+	console.log 'Visualizer Initialized'
+
+	paper.install(window)
+
+	App.Visualizer.init()
 
 	return
-
-
 
 # Initialize App on Page Ready
 $(document).ready =>
