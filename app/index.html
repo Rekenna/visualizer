@@ -11,8 +11,8 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
-    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css"/>
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css"/>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -28,20 +28,27 @@
   <body>
     <!--[if lt IE 10]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
 
-		<canvas id="visualizer" resize>
+    <canvas id="visualizer" resize></canvas>
 
-		</canvas>
+		<div class="audio-controls">
+			<audio id="audioElement" controls="controls">
+				Your browser does not support the
+				<code>audio</code>
+				element.
+				<source src="./songs/Arque- Calling You Home (Ft. Emily Bodley).mp3" type="audio/wav">
+			</audio>
+		</div>
 
-
-    <div class="container text-xs-center visualizer-controls">
-      <div class="row">
-        <div class="col-sm-12">
-          <audio id="audioElement" controls="controls">
-            Your browser does not support the
-            <code>audio</code>
-            element.
-            <source src="./song.mp3" type="audio/wav">
-          </audio>
+    <div class="site-content">
+      <div class="container">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <div class="card card-block">
+            <h3 class="card-title">Special title treatment</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
     </div>

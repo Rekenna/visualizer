@@ -4,7 +4,7 @@
   "dependencies": {
     "modernizr": "~2.8.1",
     "jquery": "^3.1.0",
-    "bootstrap": "v4.0.0-alpha.3",
+    "bootstrap": "v4.0.0-alpha.4",
     "waypoints": "^4.0.0",
     "animate.css": "^3.5.2",
     "components-font-awesome": "^4.6.3",
@@ -14,5 +14,8 @@
   "overrides": {},
   "devDependencies": {
     "mocha": "^2.4.5"
+  },
+  "resolutions": {
+    "bootstrap": "v4.0.0-alpha.4"
   }
 }

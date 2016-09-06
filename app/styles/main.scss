@@ -30,10 +30,25 @@ body{
 }
 
 canvas#visualizer {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: calc(100% - 50px);
 	width: 100%;
 	background-color: rgba(82,208,240,1);
+}
+
+.audio-controls {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	background-color: #efefef;
+}
+
+.site-content{
+	position: relative;
+	z-index: 2;
+	margin: 100px auto;
 }
