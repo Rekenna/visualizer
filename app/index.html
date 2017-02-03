@@ -1,88 +1,96 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Visualizer</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Visualizer</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/animate.css/animate.css"/>
-    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css"/>
-    <!-- endbower -->
-    <!-- endbuild -->
+		<!-- build:css styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="/bower_components/animate.css/animate.css"/>
+		<link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css"/>
+		<!-- endbower -->
+		<!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+		<!-- build:css styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+		<!-- build:js scripts/vendor/modernizr.js -->
+		<script src="/bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
 
-  </head>
-  <body>
-    <!--[if lt IE 10]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+	</head>
+	<body>
+		<!--[if lt IE 10]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
 
-    <canvas id="visualizer" resize></canvas>
+		<canvas id="visualizer" resize></canvas>
 
 		<div class="audio-controls">
-			<audio id="audioElement" controls="controls">
+			<audio volume=.1 id="audioElement" controls="controls">
 				Your browser does not support the
 				<code>audio</code>
 				element.
-				<source src="./songs/Arque- Calling You Home (Ft. Emily Bodley).mp3" type="audio/wav">
+				<source  id="playingSong" src="./songs/Arque- Calling You Home (Ft. Emily Bodley).mp3" type="audio/wav">
 			</audio>
 		</div>
 
-    <div class="site-content">
-      <div class="container">
-        <div class="col-md-6">
-        </div>
-        <div class="col-md-6">
-          <div class="card card-block">
-            <h3 class="card-title">Special title treatment</h3>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="site-content">
+			<div class="container">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6">
+					<div class="card card-block">
+						<ul class="song-list">
+							<li>
+								<a href="#0" data-song="./songs/Arque- Calling You Home (Ft. Emily Bodley).mp3" class="btn btn-primary">Calling You Home</a>
+							</li>
+							<li>
+								<a href="#0" data-song="./songs/Arque- Could Have Been Giants.mp3" class="btn btn-danger">Could have been Giants</a>
+							</li>
+							<li>
+								<a href="#0" data-song="./songs/Arque- Empires.mp3" class="btn btn-warning">Empires</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] = function() {
-          (b[l].q = b[l].q || []).push(arguments)
-        });
-        b[l].l =+ new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = 'https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-      }(window, document, 'script', 'ga'));
-      ga('create', 'UA-XXXXX-X');
-      ga('send', 'pageview');
-    </script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b, o, i, l, e, r) {
+				b.GoogleAnalyticsObject = l;
+				b[l] || (b[l] = function() {
+					(b[l].q = b[l].q || []).push(arguments)
+				});
+				b[l].l =+ new Date;
+				e = o.createElement(i);
+				r = o.getElementsByTagName(i)[0];
+				e.src = 'https://www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e, r)
+			}(window, document, 'script', 'ga'));
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+		</script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/tether/dist/js/tether.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
-    <script src="/bower_components/d3/d3.js"></script>
-    <script src="/bower_components/paper/dist/paper-full.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+		<!-- build:js scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="/bower_components/jquery/dist/jquery.js"></script>
+		<script src="/bower_components/tether/dist/js/tether.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
+		<script src="/bower_components/d3/d3.js"></script>
+		<script src="/bower_components/paper/dist/paper-full.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
 
-    <!-- build:js scripts/app.js -->
-    <script src="scripts/app.js"></script>
-    <!-- endbuild -->
-  </body>
+		<!-- build:js scripts/app.js -->
+		<script src="scripts/app.js"></script>
+		<!-- endbuild -->
+	</body>
 </html>

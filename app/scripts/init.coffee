@@ -8,6 +8,8 @@ App.init = (e) ->
 
 	console.log 'Visualizer Initialized'
 
+	App.Songs.init()
+
 	paper.install(window)
 
 	App.Visualizer.init()
