@@ -2,6 +2,7 @@ App.Songs =
 
 	init: (e) ->
 		S.player[0].volume = '0.01'
+
 		return
 
 	player: $('#audioElement')
