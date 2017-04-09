@@ -1,5 +1,5 @@
 {
-  "name": "base-landing-page",
+  "name": "ryanm-visualizer",
   "private": true,
   "dependencies": {
     "modernizr": "~2.8.1",

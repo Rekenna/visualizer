@@ -1,0 +1,14 @@
+{
+    "name": "ryanmckenna/visualizer",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Ryan McKenna",
+            "email": "ryan@rekenna.com"
+        }
+    ],
+    "require": {
+        "respect/validation": "^1.1",
+        "rmccue/requests": "^1.7"
+    }
+}

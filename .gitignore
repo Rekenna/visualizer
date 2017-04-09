@@ -1,6 +1,13 @@
-node_modules
-dist
-.tmp
-.sass-cache
-bower_components
-test/bower_components
+# Build Files
+.sass-cache/
+bower_components/
+node_modules/
+dist/
+.tmp/
+build/
+vendor/
+npm-debug.log
+app/src/scripts/**/*.js
+.editorconfig
+.gitattributes
+npm-debug.log

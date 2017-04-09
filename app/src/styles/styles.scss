@@ -1,0 +1,62 @@
+// Don't removed these
+$icon-font-path: "../fonts/";
+
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+.browserupgrade {
+	margin: 0;
+	background: lighten(red, 30%);
+	text-align: center;
+	color: #fff;
+	padding: 1em 0;
+}
+
+// Variables
+$sunset: rgba(239, 100, 97, 1);
+$honey: rgba(228, 179, 99, 1);
+$white: #F5F7F4;
+$lilac: rgba(224, 223, 213, 1);
+$space: rgba(49, 54, 56, 1);
+$blue: #21B7FF;
+
+// Mixins
+
+// Add custom Styles
+body{
+	font-size: 17px;
+}
+
+canvas#visualizer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: calc(100% - 50px);
+	width: 100%;
+	background-color: rgba(82,208,240,1);
+}
+
+.audio-controls {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	background-color: #efefef;
+}
+
+.site-content{
+	position: relative;
+	z-index: 2;
+	margin: 100px auto;
+}
+
+ul.song-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li + li{
+		margin-top: 15px;
+	}
+}
