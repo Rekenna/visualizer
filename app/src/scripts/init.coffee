@@ -23,9 +23,9 @@ $(document).ready ->
   return
 
 #
-# $('button#addMedia').on 'click', (e) ->
-#   url = $('#media').val()
-#   url = url.split('?v=')[1]
-#   App.Player.embed.loadVideoById(url)
-#   # App.Visualizer.init()
-#   return
+$('button#addMedia').on 'click', (e) ->
+  url = $('#media').val()
+  url = url.split('?v=')[1]
+  App.Player.embed.loadVideoById(url)
+  # App.Visualizer.init()
+  return
