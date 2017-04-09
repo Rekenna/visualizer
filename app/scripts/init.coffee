@@ -6,17 +6,26 @@ window.App ||= {}
 
 App.init = (e) ->
 
-	console.log 'Visualizer Initialized'
+  console.log 'Visualizer Initialized'
 
-	App.Songs.init()
+  App.Songs.init()
 
-	paper.install(window)
+  paper.install(window)
 
-	App.Visualizer.init()
+  App.Visualizer.init()
 
-	return
+  return
 
 # Initialize App on Page Ready
-$(document).ready =>
-	App.init()
-	return
+$(document).ready ->
+  App.init()
+
+  return
+
+
+$('button#addMedia').on 'click', (e) ->
+  url = $('#media').val()
+  url = url.split('?v=')[1]
+  App.Player.embed.loadVideoById(url)
+  # App.Visualizer.init()
+  return
